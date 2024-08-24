@@ -1,28 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 
-const AdList = () => {
-  const [ads, setAds] = useState([]);
-
-  useEffect(() => {
-    const fetchAds = async () => {
-      const response = await axios.get('https://classified-ads-backend-production.up.railway.app/api/ads'); // Update to Railway URL
-      setAds(response.data);
-    };
-    fetchAds();
-  }, []);
-
+const AdList = ({ ads }) => {
   return (
-    <div>
-      <h1>Classified Ads</h1>
-      <ul>
-        {ads.map(ad => (
-          <li key={ad._id}>
-            <h2>{ad.title}</h2>
-            <p>{ad.description}</p>
-            <p>${ad.price}</p>
-          </li>
-        ))}
+    <div className="mt-4">
+      <h1 className="mb-4">Classified Ads</h1>
+      <ul className="list-group">
+        {ads.length === 0 ? (
+          <li className="list-group-item">No advertisements found.</li>
+        ) : (
+          ads.map(ad => (
+            <li className="list-group-item" key={ad._id}>
+              <h2>{ad.title}</h2>
+              <p>{ad.description}</p>
+              <p className="text-success">${ad.price}</p>
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );
