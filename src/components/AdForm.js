@@ -8,7 +8,7 @@ const AdForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/ads', { title, description, price }); // Update to Railway URL
+    await axios.post('https://classified-ads-backend-production.up.railway.app/api/ads', { title, description, price }); // Update to Railway URL
     setTitle('');
     setDescription('');
     setPrice('');

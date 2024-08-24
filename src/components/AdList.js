@@ -6,7 +6,7 @@ const AdList = () => {
 
   useEffect(() => {
     const fetchAds = async () => {
-      const response = await axios.get('http://localhost:5000/api/ads'); // Update to Railway URL
+      const response = await axios.get('https://classified-ads-backend-production.up.railway.app/api/ads'); // Update to Railway URL
       setAds(response.data);
     };
     fetchAds();
