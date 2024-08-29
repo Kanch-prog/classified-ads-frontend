@@ -1,0 +1,35 @@
+/* HomePage styles */
+.hero {
+    background-color: #820ac2; /* Bootstrap primary color */
+    border-radius: 0.5rem;
+  }
+  
+  .category-card {
+    background-color: #f8f9fa; /* Light background for categories */
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 20px;
+    height: 100px; /* Fixed height */
+    transition: transform 0.2s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .category-card span {
+    font-size: 1.2rem; /* Increase font size for category names */
+    text-align: center; /* Center text */
+  }
+  
+  /* AdLIst styles */
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
