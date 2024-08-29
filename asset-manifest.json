@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/classified-ads-frontend/static/css/main.4d9b3cbb.css",
-    "main.js": "/classified-ads-frontend/static/js/main.46974f40.js",
+    "main.js": "/classified-ads-frontend/static/js/main.7d44cda7.js",
     "static/js/453.8a7c0501.chunk.js": "/classified-ads-frontend/static/js/453.8a7c0501.chunk.js",
     "static/media/logo.jpg": "/classified-ads-frontend/static/media/logo.f3448a3733000b75a070.jpg",
     "index.html": "/classified-ads-frontend/index.html",
     "main.4d9b3cbb.css.map": "/classified-ads-frontend/static/css/main.4d9b3cbb.css.map",
-    "main.46974f40.js.map": "/classified-ads-frontend/static/js/main.46974f40.js.map",
+    "main.7d44cda7.js.map": "/classified-ads-frontend/static/js/main.7d44cda7.js.map",
     "453.8a7c0501.chunk.js.map": "/classified-ads-frontend/static/js/453.8a7c0501.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d9b3cbb.css",
-    "static/js/main.46974f40.js"
+    "static/js/main.7d44cda7.js"
   ]
 }
