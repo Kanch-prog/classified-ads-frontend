@@ -15,7 +15,7 @@ const UserDashboard = ({ isLoggedIn }) => {
       const fetchUserAds = async () => {
         setLoading(true); // Set loading state
         try {
-          const response = await axios.get('classified-ads-backend-production.up.railway.app/api/ads/user-ads', {
+          const response = await axios.get('https://classified-ads-backend-production.up.railway.app/api/ads/user-ads', {
             headers: {
               Authorization: `Bearer ${token}`, // Send token in the headers for authentication
             },

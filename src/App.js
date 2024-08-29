@@ -8,15 +8,15 @@ import NotFound from './components/NotFound'; // Import your NotFound component
 
 const App = () => {
   return (
-    <Router basename="/classified-ads-frontend">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="*" element={<NotFound />} /> {/* Fallback route for 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+  </Router>
   );
 };
 

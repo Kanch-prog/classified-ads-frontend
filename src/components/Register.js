@@ -13,7 +13,7 @@ const Register = ({ onRegisterSuccess }) => {
     setError('');
   
     try {
-      const response = await axios.post('classified-ads-backend-production.up.railway.app/api/auth/register', {
+      const response = await axios.post('https://classified-ads-backend-production.up.railway.app/api/auth/register', {
         username,
         email,
         password,

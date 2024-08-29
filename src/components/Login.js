@@ -12,7 +12,7 @@ const Login = ({ onLoginSuccess }) => {
     setError('');
   
     try {
-      const response = await axios.post('classified-ads-backend-production.up.railway.app/api/auth/login', {
+      const response = await axios.post('https://classified-ads-backend-production.up.railway.app/api/auth/login', {
         email,
         password,
       });

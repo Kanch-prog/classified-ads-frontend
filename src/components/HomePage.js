@@ -28,7 +28,7 @@ const HomePage = () => {
   // Fetch all ads when component mounts
   useEffect(() => {
     const fetchAds = async () => {
-      const response = await axios.get('classified-ads-backend-production.up.railway.app/api/ads');
+      const response = await axios.get('https://classified-ads-backend-production.up.railway.app/api/ads');
       setAds(response.data);
       setFilteredAds(response.data); // Set initial filtered ads to all ads
     };

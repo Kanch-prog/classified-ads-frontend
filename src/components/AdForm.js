@@ -10,7 +10,7 @@ const AdForm = ({ token }) => {
     e.preventDefault();
     const token = localStorage.getItem('token'); // Retrieve token here
     try {
-      await axios.post('classified-ads-backend-production.up.railway.app/api/ads', 
+      await axios.post('https://classified-ads-backend-production.up.railway.app/api/ads', 
         { title, description, price }, 
         { headers: { Authorization: `Bearer ${token}` } } // Use the token in headers
       );
