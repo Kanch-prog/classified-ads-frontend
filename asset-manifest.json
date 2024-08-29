@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/classified-ads-frontend/static/css/main.4d9b3cbb.css",
-    "main.js": "/classified-ads-frontend/static/js/main.e07e85e1.js",
+    "main.js": "/classified-ads-frontend/static/js/main.4614b5b0.js",
     "static/media/logo.jpg": "/classified-ads-frontend/static/media/logo.f3448a3733000b75a070.jpg",
     "index.html": "/classified-ads-frontend/index.html",
     "main.4d9b3cbb.css.map": "/classified-ads-frontend/static/css/main.4d9b3cbb.css.map",
-    "main.e07e85e1.js.map": "/classified-ads-frontend/static/js/main.e07e85e1.js.map"
+    "main.4614b5b0.js.map": "/classified-ads-frontend/static/js/main.4614b5b0.js.map"
   },
   "entrypoints": [
     "static/css/main.4d9b3cbb.css",
-    "static/js/main.e07e85e1.js"
+    "static/js/main.4614b5b0.js"
   ]
 }
