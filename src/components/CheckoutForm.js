@@ -28,7 +28,12 @@ const CheckoutForm = () => {
     } else {
       try {
         const { id } = paymentMethod;
-        const response = await axios.post('classified-ads-backend-production.up.railway.app/api/payment', { id });
+        // Include any necessary tokens or session info if required
+        const response = await axios.post('https://your-backend-url/api/payment', {
+          id,
+          // Optionally add an auth token if needed
+          // token: localStorage.getItem('token'),
+        });
 
         if (response.data.success) {
           setPaymentSuccess('Payment successful!');
@@ -38,7 +43,7 @@ const CheckoutForm = () => {
           setPaymentSuccess(null);
         }
       } catch (error) {
-        setPaymentError('Payment failed.');
+        setPaymentError('Payment failed. Please try again.');
         setPaymentSuccess(null);
       }
     }

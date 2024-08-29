@@ -1,7 +1,7 @@
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-import CheckoutForm from './CheckoutForm'; // We'll create this next
+import CheckoutForm from './CheckoutForm'; 
 
 // Load your Stripe publishable key
 const stripePromise = loadStripe('your-publishable-key-here');
